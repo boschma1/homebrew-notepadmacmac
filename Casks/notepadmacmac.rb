@@ -4,7 +4,7 @@ cask "notepadmacmac" do
 
   url "https://github.com/boschma1/NotepadMacMac/releases/download/v#{version}/NotepadMacMac-v#{version}-macOS-universal.zip"
   name "NotepadMacMac"
-  desc "Fast, native macOS text editor in the spirit of Notepad++"
+  desc "Fast, native text editor in the spirit of Notepad++"
   homepage "https://github.com/boschma1/NotepadMacMac"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "notepadmacmac" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "NotepadMacMac.app"
 
